@@ -43,6 +43,11 @@ export default new Router({
               path: 'compGallery',
               name: 'compGallery',
               component: () => import('@/components/compBootstrap/compGallery/compGallery')
+            },
+            {
+              path: 'compLoading',
+              name: 'compLoading',
+              component: () => import('@/components/compBootstrap/compLoading/compLoading')
             }
           ]
         }

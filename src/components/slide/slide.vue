@@ -3,8 +3,9 @@
     <b-tabs tabs>
       <b-tab title="Header" @click="toHeader"></b-tab>
       <b-tab title="SowingMap" @click="toSowingMap"></b-tab>
-      <b-tab title="Gallery" @click="toGallery"></b-tab>
-      <b-tab title="Contact" active @click="toContact"></b-tab>
+      <b-tab title="Gallery" active @click="toGallery"></b-tab>
+      <b-tab title="Contact" @click="toContact"></b-tab>
+      <b-tab title="Loading" @click="toLoading"></b-tab>
     </b-tabs>
     <router-view></router-view>
   </div>
@@ -32,6 +33,9 @@ export default {
     },
     toGallery () {
       this.$router.push({name: 'compGallery'})
+    },
+    toLoading () {
+      this.$router.push({name: 'compLoading'})
     }
   }
 }
