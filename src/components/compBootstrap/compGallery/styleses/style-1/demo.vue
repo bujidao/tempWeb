@@ -1,6 +1,7 @@
 <template>
   <div class="gallery-style1">
     <div class="t-container">
+      <tTitle :cname="tname.cname" :ename="tname.ename"></tTitle>
       <b-row>
         <b-col>
           <div class="t-card">
@@ -68,11 +69,20 @@
 </template>
 
 <script>
+import tTitle from '@/components/compBootstrap/compSectionTitle/styles/style1/demo'
+
 export default {
   data () {
     return {
-      msg: 'i am Gaallery'
+      msg: 'i am Gaallery',
+      tname: {
+        cname: '中文标题',
+        ename: 'en-title'
+      }
     }
+  },
+  components: {
+    tTitle
   }
 }
 </script>

@@ -48,6 +48,11 @@ export default new Router({
               path: 'compLoading',
               name: 'compLoading',
               component: () => import('@/components/compBootstrap/compLoading/compLoading')
+            },
+            {
+              path: 'compSectionTitle',
+              name: 'compSectionTitle',
+              component: () => import('@/components/compBootstrap/compSectionTitle/compSectionTitle')
             }
           ]
         }

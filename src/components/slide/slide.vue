@@ -6,6 +6,7 @@
       <b-tab title="Gallery" active @click="toGallery"></b-tab>
       <b-tab title="Contact" @click="toContact"></b-tab>
       <b-tab title="Loading" @click="toLoading"></b-tab>
+      <b-tab title="SectionTitle" @click="toSectionTitle"></b-tab>
     </b-tabs>
     <router-view></router-view>
   </div>
@@ -36,6 +37,9 @@ export default {
     },
     toLoading () {
       this.$router.push({name: 'compLoading'})
+    },
+    toSectionTitle () {
+      this.$router.push({name: 'compSectionTitle'})
     }
   }
 }
