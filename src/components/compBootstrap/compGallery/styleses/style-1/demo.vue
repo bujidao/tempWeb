@@ -21,7 +21,7 @@
       <b-col>
         <div class="t-card">
           <div class="t-front">
-            <img src="./img/563.jpg" alt="">
+            <img src="./img/560.jpg" alt="">
             <div class="t-front-font-area">
               <p>Lorem ipsum dolor sit amet consectetur adipisi.</p>
             </div>
@@ -38,7 +38,7 @@
       <b-col>
         <div class="t-card">
           <div class="t-front">
-            <img src="./img/563.jpg" alt="">
+            <img src="./img/562.jpg" alt="">
             <div class="t-front-font-area">
               <p>Lorem ipsum dolor sit amet consectetur adipisi.</p>
             </div>
