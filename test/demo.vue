@@ -8,10 +8,11 @@
   export default {
     data () {
       return {
-        msg: '我对项目进行了改动'
+        msg: '我是新创建的项目'
       }
     }
   }
+
 </script>
 
 <style scoped lang="stylus" ref="stylesheet/stylus">
