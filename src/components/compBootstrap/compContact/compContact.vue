@@ -1,8 +1,6 @@
 <template>
-  <div class="home">
-    <!--<b-col class="t-slide" cols="2">-->
-      <router-view></router-view>
-    <!--</b-col>-->
+  <div class="header">
+    {{msg}}
   </div>
 </template>
 
@@ -10,12 +8,12 @@
   export default {
     data () {
       return {
-        msg: 'i am demo'
+        msg: 'i am compContact'
       }
     }
   }
 </script>
 
 <style scoped lang="stylus" ref="stylesheet/stylus">
-/*geshi jiuzhe*/
+
 </style>

@@ -16,8 +16,37 @@ export default new Router({
     // }
     {
       path: '/',
-      name: 'Home',
-      component: () => import('@/views/home/home')
+      name: 'Bootstrap',
+      component: () => import('@/views/home/home'),
+      children: [
+        {
+          path: '',
+          name: 'Slide',
+          component: () => import('@/components/slide/slide'),
+          children: [
+            {
+              path: 'compHeader',
+              name: 'compHeader',
+              component: () => import('@/components/compBootstrap/compHeader/compHeader')
+            },
+            {
+              path: 'compContact',
+              name: 'compContact',
+              component: () => import('@/components/compBootstrap/compContact/compContact')
+            },
+            {
+              path: 'compSowingMap',
+              name: 'compSowingMap',
+              component: () => import('@/components/compBootstrap/compSowingMap/compSowingMap')
+            },
+            {
+              path: 'compGallery',
+              name: 'compGallery',
+              component: () => import('@/components/compBootstrap/compGallery/compGallery')
+            }
+          ]
+        }
+      ]
     }
   ]
 })
