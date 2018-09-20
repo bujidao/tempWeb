@@ -8,7 +8,7 @@
   export default {
     data () {
       return {
-        msg: 'i am test'
+        msg: 'i fuck you gugs test'
       }
     }
   }
