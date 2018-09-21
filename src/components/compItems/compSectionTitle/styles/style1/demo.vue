@@ -17,11 +17,11 @@ export default {
   props: {
     cname: {
       type: '',
-      default: '标题'
+      default: '标题名字'
     },
     ename: {
       type: '',
-      default: 'title'
+      default: 'lorem ipsum dolor sit amet'
     }
   }
 }

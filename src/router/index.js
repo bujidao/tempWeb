@@ -53,6 +53,11 @@ export default new Router({
               path: 'compSectionTitle',
               name: 'compSectionTitle',
               component: () => import('@/components/compItems/compSectionTitle/compSectionTitle')
+            },
+            {
+              path: 'comp404',
+              name: 'comp404',
+              component: () => import('@/components/compItems/comp404/comp404')
             }
           ]
         }
