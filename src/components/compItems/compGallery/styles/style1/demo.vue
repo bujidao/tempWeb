@@ -63,6 +63,26 @@
             </div>
           </div>
         </b-col>
+        <b-col>
+          <div class="t-card">
+            <div class="t-front">
+              <img src="./img/559.jpg" alt="">
+              <div class="t-front-font-area">
+                <p>Lorem ipsum dolor sit amet consectetur adipisi.</p>
+              </div>
+            </div>
+            <div class="t-back">
+              <div>
+                <p>我是一段中文，并不包含任何意义，仅仅作为制作模板时测试使用。</p>
+                <p>Consectetur adipisicing elit. Possimus, praesentium?</p>
+                <p>Provident consectetur natus voluptatem quis tenetur sed beatae eius sint.</p>
+                <div class="t-b-btn">
+                  <button class="t-button">Click Here</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </b-col>
       </b-row>
     </div>
   </div>
@@ -76,8 +96,8 @@ export default {
     return {
       msg: 'i am Gaallery',
       tname: {
-        cname: '中文标题',
-        ename: 'english title'
+        cname: '图片翻转',
+        ename: 'image reverse'
       }
     }
   },
@@ -90,18 +110,17 @@ export default {
 <style scoped lang="stylus" ref="stylesheet/stylus">
   /*自定义样式*/
   /*外部容器size*/
-  $wrapper-size-width = 300px
+  $wrapper-size-width = 277px
   $wrapper-size-height = 400px
   //翻转动画时间
   $animate-time = all ease-in-out .7s
   /*前面文字区域*/
   $t-f-font-area-height = 100%
-  $t-t-font-area-bg = rgba(0, 0, 0, .2)
-  $t-f-font-size = 30px
+  $t-t-font-area-bg = linear-gradient(135deg, #1a9be6, #1a57e6)
+  $t-f-font-size = 2.4rem
+  $t-f-font-weight = 600
   $t-f-font-color = #fff
   .gallery-style1
-    /*width: 1200px*/
-    margin: 0 auto
     padding: 40px
     background: #ecf0f9
     .t-container
@@ -134,12 +153,24 @@ export default {
             width: 100%
             height:  $t-f-font-area-height
             padding: 10px
-            background: $t-t-font-area-bg
             display: flex
+            z-index: 0
+            &:after
+              position: absolute
+              display: block
+              top: 0
+              left: 0
+              width: 100%
+              height: 100%
+              background: $t-t-font-area-bg
+              opacity: .2
+              z-index: -1
+              content:''
             p
               align-self: center
               text-align: center
               font-size: $t-f-font-size
+              font-weight: $t-f-font-weight
               color: $t-f-font-color
         .t-back
           backface-visibility: hidden
