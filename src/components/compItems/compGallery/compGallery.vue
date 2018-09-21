@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import Style1 from '@/components/compBootstrap/compGallery/styleses/style-1/demo.vue'
+import Style1 from '@/components/compItems/compGallery/styles/style-1/demo.vue'
 
 export default {
   data () {

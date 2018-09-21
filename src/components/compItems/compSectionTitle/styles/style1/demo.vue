@@ -14,21 +14,29 @@ export default {
       msg: 'i am demo'
     }
   },
-  props: [
-    {
-      'cname': {
-        type: '',
-        default: '标题'
-      },
-      'ename': {
-        type: '',
-        default: 'title'
-      }
+  props: {
+    cname: {
+      type: '',
+      default: '标题'
+    },
+    ename: {
+      type: '',
+      default: 'title'
     }
-  ]
+  }
 }
 </script>
 
 <style scoped lang="stylus" ref="stylesheet/stylus">
-
+.section-title
+  clear: both
+  .t-title
+    text-align: center
+    padding: 10px 0
+    .t-cn
+      font-size: 30px
+    .t-en
+      font-size: 20px
+      text-transform: capitalize
+/*格式纠正*/
 </style>

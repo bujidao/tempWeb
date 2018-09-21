@@ -27,32 +27,32 @@ export default new Router({
             {
               path: 'compHeader',
               name: 'compHeader',
-              component: () => import('@/components/compBootstrap/compHeader/compHeader')
+              component: () => import('@/components/compItems/compHeader/compHeader')
             },
             {
               path: 'compContact',
               name: 'compContact',
-              component: () => import('@/components/compBootstrap/compContact/compContact')
+              component: () => import('@/components/compItems/compContact/compContact')
             },
             {
               path: 'compSowingMap',
               name: 'compSowingMap',
-              component: () => import('@/components/compBootstrap/compSowingMap/compSowingMap')
+              component: () => import('@/components/compItems/compSowingMap/compSowingMap')
             },
             {
               path: 'compGallery',
               name: 'compGallery',
-              component: () => import('@/components/compBootstrap/compGallery/compGallery')
+              component: () => import('@/components/compItems/compGallery/compGallery')
             },
             {
               path: 'compLoading',
               name: 'compLoading',
-              component: () => import('@/components/compBootstrap/compLoading/compLoading')
+              component: () => import('@/components/compItems/compLoading/compLoading')
             },
             {
               path: 'compSectionTitle',
               name: 'compSectionTitle',
-              component: () => import('@/components/compBootstrap/compSectionTitle/compSectionTitle')
+              component: () => import('@/components/compItems/compSectionTitle/compSectionTitle')
             }
           ]
         }

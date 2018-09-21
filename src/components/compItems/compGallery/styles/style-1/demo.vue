@@ -69,7 +69,7 @@
 </template>
 
 <script>
-import tTitle from '@/components/compBootstrap/compSectionTitle/styles/style1/demo'
+import tTitle from '@/components/compItems/compSectionTitle/styles/style1/demo'
 
 export default {
   data () {
@@ -77,7 +77,7 @@ export default {
       msg: 'i am Gaallery',
       tname: {
         cname: '中文标题',
-        ename: 'en-title'
+        ename: 'english title'
       }
     }
   },
