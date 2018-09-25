@@ -12,6 +12,9 @@
     <div class="t-comp-wrapper">
       <Style3></Style3>
     </div>
+    <div class="t-comp-wrapper">
+      <Style4></Style4>
+    </div>
   </div>
 </template>
 
@@ -20,6 +23,7 @@ import Style1 from '@/components/compItems/compGallery/styles/style1/demo.vue'
 import Style12 from '@/components/compItems/compGallery/styles/style1-2/demo.vue'
 import Style2 from '@/components/compItems/compGallery/styles/style2/demo.vue'
 import Style3 from '@/components/compItems/compGallery/styles/style3/demo.vue'
+import Style4 from '@/components/compItems/compGallery/styles/style4/demo.vue'
 
 export default {
   data () {
@@ -31,7 +35,8 @@ export default {
     Style1,
     Style12,
     Style2,
-    Style3
+    Style3,
+    Style4
   }
 }
 </script>

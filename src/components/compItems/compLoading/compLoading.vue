@@ -1,19 +1,28 @@
 <template>
-  <div class="header">
-    {{msg}}
+  <div class="compLoading">
+    <div class="t-comp-wrapper">
+      <Style1></Style1>
+    </div>
   </div>
 </template>
 
 <script>
+  import Style1 from './styles/style1/demo'
   export default {
     data () {
       return {
         msg: 'i am demo'
       }
+    },
+    components: {
+      Style1
     }
   }
 </script>
 
 <style scoped lang="stylus" ref="stylesheet/stylus">
-
+  .compLoading
+    .t-comp-wrapper:nth-child(2n+1)
+      background: #ecf0f9
+/*格式纠正*/
 </style>

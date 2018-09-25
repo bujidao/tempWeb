@@ -34,7 +34,7 @@ export default {
 <style scoped lang="stylus" ref="stylesheet/stylus">
   /*可修改部分*/
   /*标题下划线颜色*/
-  $t-title-bb1px = #eee
+  $t-title-bb1px = #ddd
 .title-style4
   clear: both
   width: 100%

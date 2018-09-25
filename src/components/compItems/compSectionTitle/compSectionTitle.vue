@@ -13,6 +13,9 @@
       <div class="t-comp-wrapper">
         <Style4></Style4>
       </div>
+      <div class="t-comp-wrapper">
+        <Style5></Style5>
+      </div>
       <hr>
     </div>
   </div>
@@ -23,6 +26,7 @@ import Style1 from './styles/style1/demo.vue'
 import Style2 from './styles/style2/demo.vue'
 import Style3 from './styles/style3/demo.vue'
 import Style4 from './styles/style4/demo.vue'
+import Style5 from './styles/style5/demo.vue'
 
 export default {
   data () {
@@ -34,7 +38,8 @@ export default {
     Style1,
     Style2,
     Style3,
-    Style4
+    Style4,
+    Style5
   }
 }
 </script>

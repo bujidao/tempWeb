@@ -51,7 +51,7 @@ export default {
       padding: 0 10%
       background: $t-model-bg
       .t-cn
-        font-size: 36px
+        font-size: 32px
         font-weight: 700
       .t-en
         font-size: 14px

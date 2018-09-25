@@ -35,7 +35,7 @@ export default {
     text-align: center
     padding-bottom: 20px
     .t-cn
-      font-size: 36px
+      font-size: 32px
       font-weight: 700
     .t-en
       font-size: 14px

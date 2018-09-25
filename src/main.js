@@ -3,6 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+// import BaiduMap from 'vue-baidu-map'
 
 import 'jquery'
 
@@ -13,6 +14,9 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 import 'bootstrap-vue/dist/bootstrap-vue.js'
 
 Vue.use(BootstrapVue)
+// Vue.use(BaiduMap, {
+//   ak: ''
+// })
 
 Vue.config.productionTip = false
 

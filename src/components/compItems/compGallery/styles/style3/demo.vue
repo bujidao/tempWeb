@@ -52,7 +52,7 @@ export default {
     return {
       msg: 'i am Gaallery',
       tname: {
-        cname: '图片缩放',
+        cname: '边框&蒙版',
         ename: '>>more'
       }
     }
@@ -88,7 +88,7 @@ export default {
           width: 100%
           height: $t-card-pic-height
           overflow: hidden
-          border-bottom: 4px solid #eee
+          border-bottom: 4px solid #ddd
           transition: $t-card-animate
           &:before
             position: absolute
@@ -125,7 +125,7 @@ export default {
               opacity: 1
         .t-card-font-wrapper
           overflow: hidden
-          border: 1px solid #eee
+          border: 1px solid #ddd
           padding: 10px 15px
           transition: $t-card-animate
           .t-card-title

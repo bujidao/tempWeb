@@ -39,7 +39,7 @@ export default {
     .t-n
       display: inline-block
     .t-cn
-      font-size: 36px
+      font-size: 32px
       font-weight: 700
     .t-en
       font-size: 14px

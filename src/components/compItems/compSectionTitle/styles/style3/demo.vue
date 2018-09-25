@@ -43,7 +43,7 @@ export default {
       padding: 0 10%
       border-bottom: 5px solid #ddd
       .t-cn
-        font-size: 36px
+        font-size: 32px
         font-weight: 700
       .t-en
         font-size: 14px
