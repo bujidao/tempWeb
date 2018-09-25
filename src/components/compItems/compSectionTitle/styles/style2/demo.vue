@@ -1,8 +1,8 @@
 <template>
-  <div class="title-style1">
+  <div class="title-style2">
     <div class="t-title">
-      <h3 class="t-cn">{{cname}}</h3>
-      <p class="t-en">{{ename}}</p>
+      <h3 class="t-n t-cn">{{cname}}</h3>
+      <p class="t-n t-en">{{ename}}</p>
     </div>
   </div>
 </template>
@@ -28,12 +28,16 @@ export default {
 </script>
 
 <style scoped lang="stylus" ref="stylesheet/stylus">
-.title-style1
+.title-style2
   clear: both
   width: 100%
   .t-title
-    text-align: center
-    padding-bottom: 20px
+    text-align: left
+    margin-bottom: 20px
+    padding: 0 50px
+    border-bottom: 1px solid #ddd
+    .t-n
+      display: inline-block
     .t-cn
       font-size: 36px
       font-weight: 700

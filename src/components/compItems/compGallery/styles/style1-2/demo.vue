@@ -96,8 +96,8 @@ export default {
     return {
       msg: 'i am Gaallery',
       tname: {
-        cname: '图片翻转',
-        ename: 'image reverse'
+        cname: '图片滑入',
+        ename: 'image slide'
       }
     }
   },
@@ -112,14 +112,23 @@ export default {
   /*外部容器size*/
   $wrapper-size-width = 277px
   $wrapper-size-height = 400px
-  //翻转动画时间
-  $animate-time = all ease-in-out .7s
+  //滑入动画时间
+  $animate-time = all ease-in-out .5s
+  //  滑入方向
+  $animate-direction = $a-left, 0
+  $a-left = -100%
+  $a-right = 100%
+  $a-top = -100%
+  $a-bottom = 100%
   /*前面文字区域*/
   $t-f-font-area-height = 100%
   $t-t-font-area-bg = linear-gradient(135deg, #1a9be6, #1a57e6)
   $t-f-font-size = 2.4rem
   $t-f-font-weight = 600
   $t-f-font-color = #fff
+  /*滑入色块相关*/
+  $t-f-back-bg = #fff
+  $t-f-back-font-color = #000
   .gallery-style1
     padding: 40px
     /*background: #ecf0f9*/
@@ -134,12 +143,10 @@ export default {
         position: relative
         cursor: default
         &:hover
-          .t-front
-            transform: rotateY(-180deg)
           .t-back
-            transform: rotateY(0deg)
+            transform: translateX(0)
+            opacity: 1
         .t-front
-          backface-visibility: hidden
           positioin: absolute
           left: 0
           top: 0
@@ -173,15 +180,15 @@ export default {
               font-weight: $t-f-font-weight
               color: $t-f-font-color
         .t-back
-          backface-visibility: hidden
-          transform: rotateY(-180deg)
+          transform: translate($animate-direction)
+          opacity: 0
           position: absolute
           padding: 20px 30px
           top: 0
           left: 0
           width: 100%
           height: 100%
-          background: #fff
+          background: $t-f-back-bg
           text-slign: center
           transition: $animate-time
           p

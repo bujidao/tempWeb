@@ -53,7 +53,7 @@ export default {
       msg: 'i am Gaallery',
       tname: {
         cname: '图片缩放',
-        ename: 'image zoom'
+        ename: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in facilisis ex, vitae maximus diam. Maecenas nisl dui.'
       }
     }
   },
@@ -84,7 +84,7 @@ export default {
           img
             min-height: 100%
             max-width: 100%
-            transition: all $t-card-pic-time ease 0s
+            transition: all $t-card-pic-time ease-in-out
           &:hover
             img
               transform: scale(1.2)
