@@ -5,7 +5,7 @@
       <b-row>
         <b-col>
           <div class="t-card">
-            <div class="t-card-pic-wrapper"><img src="./images/a.jpg"></div>
+            <div class="t-card-pic-wrapper"><img src="./images/home_teaser1.jpg"></div>
             <div class="t-card-font-wrapper">
               <h2 class="t-card-title"><a href="#">Lorem ipsum dolor sit amet consectetur adipisi.</a></h2>
               <p class="t-card-description">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit，Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
@@ -14,7 +14,7 @@
         </b-col>
         <b-col>
           <div class="t-card">
-            <div class="t-card-pic-wrapper"><img src="./images/b.jpg"></div>
+            <div class="t-card-pic-wrapper"><img src="./images/home_teaser2.jpg"></div>
             <div class="t-card-font-wrapper">
               <h2 class="t-card-title"><a href="#">Lorem ipsum dolor sit amet consectetur adipisi.</a></h2>
               <p class="t-card-description">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit，Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
@@ -23,7 +23,7 @@
         </b-col>
         <b-col>
           <div class="t-card">
-            <div class="t-card-pic-wrapper"><img src="./images/c.jpg"></div>
+            <div class="t-card-pic-wrapper"><img src="./images/home_teaser3.jpg"></div>
             <div class="t-card-font-wrapper">
               <h2 class="t-card-title"><a href="#">Lorem ipsum dolor sit amet consectetur adipisi.</a></h2>
               <p class="t-card-description">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit，Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
@@ -32,7 +32,7 @@
         </b-col>
         <b-col>
           <div class="t-card">
-            <div class="t-card-pic-wrapper"><img src="./images/d.jpg"></div>
+            <div class="t-card-pic-wrapper"><img src="./images/home_teaser4.jpg"></div>
             <div class="t-card-font-wrapper">
               <h2 class="t-card-title"><a href="#">Lorem ipsum dolor sit amet consectetur adipisi.</a></h2>
               <p class="t-card-description">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit，Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
@@ -45,7 +45,7 @@
 </template>
 
 <script>
-import tTitle from '@/components/compItems/compSectionTitle/styles/style3/demo'
+import tTitle from '@/components/compItems/compSectionTitle/styles/style5/demo'
 
 export default {
   data () {
@@ -53,7 +53,7 @@ export default {
       msg: 'i am Gaallery',
       tname: {
         cname: '图片缩放',
-        ename: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in facilisis ex, vitae maximus diam. Maecenas nisl dui.'
+        ename: '>>more'
       }
     }
   },
@@ -68,7 +68,8 @@ export default {
   /*外部容器size*/
   $col-length = 2
   /*动画持续时间*/
-  $t-card-pic-time = .5s
+  $t-card-animate = all .5s ease-in-out
+  $t-card-pic-height = 166px
   .gallery-style2
     padding: 40px
     .t-container
@@ -77,22 +78,56 @@ export default {
       .row
         margin-bottom: 20px
       .t-card
+        transition: $t-card-animate
+        &:hover .t-card-font-wrapper
+          border-bottom-color: deepskyblue
+        &:hover .t-card-pic-wrapper
+          border-bottom-color: deepskyblue
         .t-card-pic-wrapper
+          position: relative
           width: 100%
-          height: 200px
+          height: $t-card-pic-height
           overflow: hidden
+          border-bottom: 4px solid #eee
+          transition: $t-card-animate
+          &:before
+            position: absolute
+            display: block
+            width: 50px
+            height: 50px
+            border-radius: 50%
+            left: 50%
+            top: 50%
+            margin: -25px 0 0 -25px
+            background: url("images/cross.png") center center
+            content: ''
+            transition: $t-card-animate
+            z-index: 1
+            opacity: 0
+          &:after
+            position: relative
+            display: block
+            top: -100%
+            left: 0
+            width: 100%
+            height: 100%
+            background: url("images/linegrid.png")
+            content: ''
+            transition: $t-card-animate
+            opacity: 0
           img
             min-height: 100%
             max-width: 100%
-            transition: all $t-card-pic-time ease-in-out
           &:hover
-            img
-              transform: scale(1.2)
+            &:before
+              opacity: 1
+            &:after
+              opacity: 1
         .t-card-font-wrapper
-          height: 140px
           overflow: hidden
           border: 1px solid #eee
           padding: 10px 15px
+          transition: $t-card-animate
           .t-card-title
             display: -webkit-box
             -webkit-box-orient: vertical
@@ -102,7 +137,7 @@ export default {
           .t-card-description
             display: -webkit-box
             -webkit-box-orient: vertical
-            -webkit-line-clamp: 3
+            -webkit-line-clamp: 2
             overflow: hidden
             font-size: 16px
   /*格式校正*/

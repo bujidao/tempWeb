@@ -69,6 +69,8 @@ export default {
   $col-length = 2
   /*动画持续时间*/
   $t-card-pic-time = .5s
+  /*图片区域大小*/
+  $t-card-pic-height = 168px
   .gallery-style2
     padding: 40px
     .t-container
@@ -79,7 +81,7 @@ export default {
       .t-card
         .t-card-pic-wrapper
           width: 100%
-          height: 200px
+          height: $t-card-pic-height
           overflow: hidden
           img
             min-height: 100%
