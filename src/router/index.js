@@ -3,9 +3,7 @@ import Router from 'vue-router'
 
 // import HelloWorld from '@/components/HelloWorld'
 import Header from '@/components/header/header'
-import icon from 'vue-icons'
 Vue.component('Header', Header)
-Vue.component('icon', icon)
 
 Vue.use(Router)
 

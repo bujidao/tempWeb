@@ -11,9 +11,6 @@ module.exports = {
     sourceMap: sourceMapEnabled,
     extract: isProduction
   }),
-  postLoaders: [
-    { test: /vue-icons/, loader: "callback-loader"}
-  ],
   cssSourceMap: sourceMapEnabled,
   cacheBusting: config.dev.cacheBusting,
   transformToRequire: {
@@ -21,6 +18,5 @@ module.exports = {
     source: 'src',
     img: 'src',
     image: 'xlink:href'
-  },
-  callbackLoader: require("vue-icons/icon-loader")(["fa-thumbs-up"])
+  }
 }

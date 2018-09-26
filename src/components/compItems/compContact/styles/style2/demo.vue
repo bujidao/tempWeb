@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import tTitle from '@/components/compItems/compSectionTitle/styles/style5/demo'
+import tTitle from '@/components/compItems/compSectionTitle/styles/style3/demo'
 import BMap from 'BMap'
 
 export default {
