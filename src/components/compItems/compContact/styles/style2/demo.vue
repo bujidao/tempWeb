@@ -3,21 +3,62 @@
     <div class="t-container">
       <tTitle :cname="tname.cname" :ename="tname.ename"></tTitle>
       <b-row>
-        <b-col>
-          <span class="t-icon-wrapper glyphicon glyphicon-earphone"><v-icon name="phone"/></span>
-          <span class="t-info t-info-call">联系电话：<strong>{{contact.phone}}</strong></span>
+        <b-col class="contact-area">
+          <b-row>
+            <b-col>
+              <!--<span class="t-icon-wrapper glyphicon glyphicon-earphone"></span>-->
+              <span class="t-info t-info-call"><v-icon name="phone" class="t-icon"/>联系电话：<strong>{{contact.phone}}</strong></span>
+            </b-col>
+          </b-row>
+          <b-row>
+            <b-col>
+              <!--<span class="t-icon-wrapper"></span>-->
+              <span class="t-info t-info-email"><v-icon name="envelope" class="t-icon"/>联系邮箱： {{contact.email}}</span>
+            </b-col>
+          </b-row>
+          <b-row>
+            <b-col>
+              <!--<span class="t-icon-wrapper fa fa-camera-retro"></span>-->
+              <span class="t-info t-info-address"><v-icon name="map" class="t-icon"/>联系地址： {{contact.address}}</span>
+            </b-col>
+          </b-row>
+          <b-form>
+            <b-row>
+              <b-col>
+                <b-form-group
+                  label-for="t-input-name">
+                  <b-form-input
+                    placeholder="Your Name">
+                  </b-form-input>
+                </b-form-group>
+              </b-col>
+              <b-col>
+                <b-form-group
+                  label-for="t-input-email">
+                  <b-form-input
+                    placeholder="Your Email">
+                  </b-form-input>
+                </b-form-group>
+              </b-col>
+            </b-row>
+            <b-row>
+              <b-col>
+                <b-form-group
+                  label-for="t-input-email">
+                  <b-form-textarea
+                    :rows="7"
+                    placeholder="Enter Something">
+                  </b-form-textarea >
+                </b-form-group>
+              </b-col>
+            </b-row>
+          </b-form>
         </b-col>
         <b-col>
-          <span class="t-icon-wrapper"><v-icon name="envelope"/></span>
-          <span class="t-info t-info-email">联系邮箱： {{contact.email}}</span>
+          <b-row>
+            <div id="allmap" ref="allmap"></div>
+          </b-row>
         </b-col>
-        <b-col>
-          <span class="t-icon-wrapper fa fa-camera-retro"><v-icon name="map"/></span>
-          <span class="t-info t-info-address">联系地址： {{contact.address}}</span>
-        </b-col>
-      </b-row>
-      <b-row>
-        <div id="allmap" ref="allmap"></div>
       </b-row>
     </div>
   </div>
@@ -79,6 +120,10 @@ export default {
     .t-container
       width: 1200px
       margin: 0 auto
+      .contact-area
+        margin-top: 10px
+        .row
+          margin: 10px 0
       span
         float: left
       .t-icon-wrapper
@@ -96,10 +141,9 @@ export default {
           margin-left: 60px
           margin-top: -60px
           content: ''
-          height: 60px
+          height: 40px
           border-right: 1px solid #ccc
       .t-info
-        margin-left: 20px
         display: inline-block
         height: $t-size
         line-height: $t-size
@@ -109,5 +153,8 @@ export default {
             font-size: 25px
             font-weight: 700
             color: red
+        .t-icon
+          color: #666
+          margin-right: 10px
   /*格式校正*/
 </style>
