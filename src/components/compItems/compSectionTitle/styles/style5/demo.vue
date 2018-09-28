@@ -1,10 +1,10 @@
 <template>
-  <div class="title-style4">
+  <div class="title-style5">
     <div class="t-title">
       <div class="t-n">
-        <h3 class="t-cn">{{cname}}</h3>
-        <div class="t-more">
-          <a href="">{{ename}}</a>
+        <h3 class="t-title-main">{{tname}}</h3>
+        <div class="t-title-more">
+          <a href="">{{tmore}}</a>
         </div>
       </div>
     </div>
@@ -19,11 +19,11 @@ export default {
     }
   },
   props: {
-    cname: {
+    tname: {
       type: '',
-      default: '标题名字'
+      default: '标题样式五'
     },
-    ename: {
+    tmore: {
       type: '',
       default: 'lorem ipsum dolor sit amet'
     }
@@ -35,7 +35,7 @@ export default {
   /*可修改部分*/
   /*标题下划线颜色*/
   $t-title-bb1px = #ddd
-.title-style4
+.title-style5
   clear: both
   width: 100%
   .t-title
@@ -44,12 +44,12 @@ export default {
     .t-n
       overflow: hidden
       border-bottom: 1px solid $t-title-bb1px
-      .t-cn
+      .t-title-main
         display: inline-block
         float: left
         font-size: 13px
         font-weight: 700
-      .t-more
+      .t-title-more
         display: inline-block
         float: right
         font-size: 11px

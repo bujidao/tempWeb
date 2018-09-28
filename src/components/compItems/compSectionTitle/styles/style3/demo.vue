@@ -2,8 +2,8 @@
   <div class="title-style3">
     <div class="t-title">
       <div class="t-n">
-        <h3 class="t-cn">{{cname}}</h3>
-        <p class="t-en">{{ename}}</p>
+        <h3 class="t-title-main">{{tname}}</h3>
+        <p class="t-title-sub">{{tsubname}}</p>
       </div>
     </div>
   </div>
@@ -17,11 +17,11 @@ export default {
     }
   },
   props: {
-    cname: {
+    tname: {
       type: '',
-      default: '标题名字'
+      default: '标题样式三'
     },
-    ename: {
+    tsubname: {
       type: '',
       default: 'lorem ipsum dolor sit amet'
     }
@@ -40,12 +40,12 @@ export default {
     border-bottom: 1px solid #ddd
     .t-n
       display: inline-block
-      padding: 0 10%
+      padding: 0 5%
       border-bottom: 5px solid #ddd
-      .t-cn
+      .t-title-main
         font-size: 32px
         font-weight: 700
-      .t-en
+      .t-title-sub
         font-size: 14px
         text-transform: capitalize
 /*格式纠正*/
