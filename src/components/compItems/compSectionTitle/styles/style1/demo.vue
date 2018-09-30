@@ -28,6 +28,7 @@ export default {
 </script>
 
 <style scoped lang="stylus" ref="stylesheet/stylus">
+$tcolor = #fff
 .title-style1
   clear: both
   width: 100%
@@ -37,8 +38,10 @@ export default {
     .t-title-main
       font-size: 32px
       font-weight: 700
+      color: $tcolor
     .t-title-sub
       font-size: 14px
       text-transform: capitalize
+      color: $tcolor
 /*格式纠正*/
 </style>

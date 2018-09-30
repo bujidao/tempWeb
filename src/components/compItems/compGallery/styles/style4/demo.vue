@@ -1,5 +1,5 @@
 <template>
-  <div class="gallery-style2">
+  <div class="gallery-style4">
     <div class="t-container">
       <tTitle :cname="tname.cname" :ename="tname.ename"></tTitle>
       <b-row>
@@ -63,7 +63,7 @@ export default {
   $t-card-animate = all .2s ease
   $t-card-pic-padding = 14px
   $t-card-pic-size = 66px
-  .gallery-style2
+  .gallery-style4
     padding: 40px
     .t-container
       width: 1200px

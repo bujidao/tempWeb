@@ -5,22 +5,30 @@ import App from './App'
 import router from './router'
 // import BaiduMap from 'vue-baidu-map'
 
-// 引入jQuery npm install jquery --s
+// 引入jQuery
+// npm install jquery --s
 import 'jquery'
 
-// 引入vue-bootstrap npm install bootstrap-vue --s
+// 引入vue-bootstrap
+// npm install bootstrap-vue --s
 import BootstrapVue from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/dist/js/bootstrap.js'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import 'bootstrap-vue/dist/bootstrap-vue.js'
 
-// 引入图标并全局注册 npm install vue-awesome --s
+// 引入awesome图标并全局注册
+// npm install vue-awesome --s
 import Icon from 'vue-awesome/components/Icon'
 import 'vue-awesome/icons'
-Vue.component('v-icon', Icon)
+
+// 引入粒子特效
+// npm install vue-particles --save-dev
+import VueParticles from 'vue-particles'
 
 Vue.use(BootstrapVue)
+Vue.component('v-icon', Icon)
+Vue.use(VueParticles)
 // Vue.use(BaiduMap, {
 //   ak: ''
 // })
